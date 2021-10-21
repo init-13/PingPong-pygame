@@ -35,8 +35,8 @@ def sign():
         for x in range(230):
                 display.fill((0,0,0))
                 display.blit(pygame.image.load('start.jpg'),(0,0))
-                sign_font=pygame.font.Font(None,25)
-                signature=sign_font.render("*** Created by: NITIN DAS ***",True,(255,255,255))
+                sign_font=pygame.font.Font(None,40)
+                signature=sign_font.render("*** Created by: NITIN DAS ***",True,(205,205,180))
                 signature_rect=signature.get_rect(center=(int(d_w/2),int(d_h/2)))
                 display.blit(signature,signature_rect)
                 pygame.display.flip()
@@ -70,7 +70,7 @@ def game_over():
         font_title=pygame.font.Font(None,50)
         font_instructions=pygame.font.Font(None,24)
 
-        announcement = font_title.render("GAME OVER",True,(255,255,255))
+        announcement = font_title.render("GAME OVER",True,(165,42,42))
         announcement_rect=announcement.get_rect(center=(int(d_w/1.9),int(d_h/2)))
         display.blit(announcement,announcement_rect)
 
@@ -78,11 +78,11 @@ def game_over():
         sinstructions_rect=sinstructions.get_rect(center=(int(d_w/1.7),int(d_h/1.77)))
         display.blit(sinstructions,sinstructions_rect)
 
-        qinstructions= font_instructions.render("Press q to quit the game",True,(255,255,255))
+        qinstructions= font_instructions.render("Press q to quit the game",True,(61,89,171))
         qinstructions_rect=qinstructions.get_rect(center=(int(d_w/3),50))
         display.blit(qinstructions,qinstructions_rect)
 
-        rinstructions = font_instructions.render("Press r to play agin",True,(255,255,255))
+        rinstructions = font_instructions.render("Press r to play agin",True,(61,89,171))
         rinstructions_rect=rinstructions.get_rect(center=(int(d_w/1.3),50))
         display.blit(rinstructions,rinstructions_rect)
         pygame.display.flip()
@@ -147,7 +147,7 @@ while True:
         display.blit(ball,(x,y))
 
         font_instructions=pygame.font.Font(None,60)
-        sinstructions= font_instructions.render(str(total_score),True,(255,255,255))
+        sinstructions= font_instructions.render(str(total_score),True,(255,0,0))
         sinstructions_rect=sinstructions.get_rect(center=(int(d_w/1.77),20))
         display.blit(sinstructions,sinstructions_rect)
 
