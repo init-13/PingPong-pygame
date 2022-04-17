@@ -1,6 +1,7 @@
 # PingPong-pygame
 ---
 ## An interactive Single-Player PingPong Game.
+## Ball speed increases with increasing time.
 
 > pip install pygame
 
